@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Poppins !important;
+}
+
+.first_text {
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+nav {
+  background-color: #ed2460;
+  position: fixed;
+  width: 100%;
+}
+
+.header a {
+  color: #fff !important;
+  position: relative;
+}
+
+.header_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-bottom: 3px solid #ed2460;
+  border-top: 3px solid #ed2460;
+  background-color: #fff;
+
+  height: 150px;
+  width: 245px;
+  left: 102.5px;
+  border-radius: 0px;
+}
+
+.logo {
+  width: 200px;
+  height: 98px;
+}
+
+/* TODO: fix heigh 100% hover on nav-items */
+.main-nav > li > a {
+  height: 100%;
+}
+
+.nav-item:hover {
+  background-color: #e19bb0;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+}
+
+h3 {
+  font-size: 30px !important;
+  font-family: Poppins;
+  font-weight: 600 !important;
+}
+
+.services-info {
+  width: 747px;
+  margin: auto;
+}
+
+.services-info > p {
+  font-family: Poppins;
+}
+
+.service-button {
+  width: 135px !important;
+  height: 39px !important;
+  background-color: #ed2460;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.footer-container {
+  height: 160px;
+  background-color: #ed2460;
+}
