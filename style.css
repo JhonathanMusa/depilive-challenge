@@ -7,37 +7,48 @@ html {
   box-sizing: border-box;
   font-family: Poppins !important;
 }
+.container_first_text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #fef2f4;
+  height: 49px;
+}
 
 .first_text {
   text-align: right;
   margin-right: 50px;
-  margin-top: 10px;
 }
 
 nav {
   background-color: #ed2460;
   position: fixed;
   width: 100%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
 }
 
 .header a {
   color: #fff !important;
+  font-family: Poppins;
   position: relative;
 }
 
-.header_logo {
+.container_logo {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  border-bottom: 3px solid #ed2460;
-  border-top: 3px solid #ed2460;
   background-color: #fff;
 
-  height: 150px;
+  height: 162px;
   width: 245px;
   left: 102.5px;
+  margin-top: 10px;
   border-radius: 0px;
+}
+
+.div-logo {
+  position: absolute;
 }
 
 .logo {
@@ -46,7 +57,7 @@ nav {
 }
 
 /* TODO: fix heigh 100% hover on nav-items */
-.main-nav > li > a {
+.main-nav li a {
   height: 100%;
 }
 
@@ -68,12 +79,33 @@ h3 {
   font-weight: 600 !important;
 }
 
+.card {
+  width: 346px !important;
+  height: 549px !important;
+  font-family: Poppins;
+  font-size: 14px;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.07);
+}
+
+.card img {
+  width: 304px;
+  height: 270px;
+}
+
+.card-title {
+  font-weight: 500;
+}
+
+.card-text {
+  font-weight: 200;
+}
+
 .services-info {
   width: 747px;
   margin: auto;
 }
 
-.services-info > p {
+.services-info p {
   font-family: Poppins;
 }
 
@@ -90,4 +122,5 @@ h3 {
 .footer-container {
   height: 160px;
   background-color: #ed2460;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.25);
 }
