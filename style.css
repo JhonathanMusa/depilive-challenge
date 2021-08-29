@@ -3,12 +3,13 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: Poppins;
 }
 
 html {
   box-sizing: border-box;
 }
-.container_first_text {
+.container__first-text {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -17,13 +18,12 @@ html {
 }
 
 .first_text {
-  font-family: Poppins;
   font-weight: 300;
   text-align: right;
   margin-right: 50px;
 }
 
-/* HEADER AND NAV */
+/* ============== HEADER AND NAV ============== */
 
 nav {
   background-color: #ee4c7c;
@@ -36,7 +36,6 @@ nav {
 
 .header a {
   color: #fff !important;
-  font-family: Poppins;
   position: relative;
 }
 
@@ -71,9 +70,12 @@ nav {
   overflow: hidden;
 }
 
+.main-nav li:hover {
+  background-color: #e19bb0;
+}
+
 .main-nav li a {
   margin-left: 40px;
-  font-family: Poppins;
   font-weight: 500;
   font-size: 14px;
   display: block;
@@ -83,7 +85,7 @@ nav {
   background-color: #e19bb0;
 }
 
-/* BANNER */
+/* ============== BANNER SECTION ============== */
 
 .banner {
   width: 100%;
@@ -94,7 +96,7 @@ nav {
   width: 100%;
 }
 
-.banner_text {
+.banner__text {
   position: absolute;
   width: 310px;
   height: 90px;
@@ -102,14 +104,13 @@ nav {
   left: 160px;
 }
 
-.banner_text h5 {
+.banner__text h5 {
   font-weight: 400;
   font-weight: 500;
   font-size: 30px !important;
-  font-family: Poppins;
 }
 
-.banner_text-body {
+.banner__text-body {
   width: 327px;
   height: 78px;
   position: absolute;
@@ -117,34 +118,23 @@ nav {
   left: 160px;
 }
 
-.banner_text-body span {
-  font-family: Poppins;
+.banner__text-body span {
   font-weight: 300;
 }
 
-.banner_text-title1 {
+.banner__text-section1 {
   font-weight: 400;
   color: #ee4c7c;
 }
-.banner_text-title2 {
+.banner__text-section2 {
   font-size: 30px !important;
   font-weight: 500;
   color: #ee4c7c;
 }
 
-/* BODY - SECTIONS */
-/* .circle {
-  position: absolute;
-  z-index: 1;
-  width: 28px;
-  height: 28px;
-  background-color: #E19BB0;
-  border-radius: 100%;
-  margin:10px auto auto 40%;
-} */
+/* ============== BODY - SECTIONS ============== */
 
-.services-title {
-  font-family: Poppins;
+.services__title {
   font-size: 30px;
   font-weight: 600;
 }
@@ -161,28 +151,25 @@ nav {
 }
 
 .card-title {
-  font-family: Poppins;
   font-weight: 500;
   font-size: 18px;
 }
 
 .card-text {
-  font-family: Poppins;
   font-weight: 300;
   font-size: 14px;
 }
 
-.services-info {
+.services__info {
   width: 747px;
   margin: auto;
 }
 
-.services-info p {
-  font-family: Poppins;
+.services__info p {
   font-weight: 300;
 }
 
-.service-button {
+.services__button {
   width: 135px !important;
   height: 39px !important;
   background-color: #ed2460;
@@ -192,7 +179,7 @@ nav {
   outline: none;
 }
 
-/* FOOTER */
+/* ============== FOOTER ============== */
 
 .footer-container {
   height: 160px;
@@ -200,30 +187,27 @@ nav {
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.25);
 }
 
-.footer-info {
-  font-family: Poppins;
+.footer-container__info {
   font-weight: 500;
   font-size: 14px;
   color: #fff;
   text-align: left;
 }
 
-.ft-title {
-  font-family: Poppins;
+.footer-container__title1 {
   font-weight: 500;
   font-size: 30px;
   color: #fff;
 }
 
-.ft-sub {
-  font-family: Poppins;
+.footer-container__subtitle {
   font-weight: 400;
   font-size: 6px;
   color: #fff;
   margin-left: 50px;
 }
 
-.ft-last-container {
+.footer-container__last-text {
   display: flex;
   align-items: center;
   width: 113px;
@@ -231,24 +215,22 @@ nav {
   margin-left: 70px;
 }
 
-.ft-last-container p {
-  font-family: Poppins;
+.footer-container__last-text p {
   font-weight: 600;
   font-size: 9px;
   color: #fff;
 }
 
-.footer-info-title {
-  font-family: Poppins;
+.footer-container__info-title {
   font-weight: 600;
   font-size: 18px;
 }
 
-.footer-symbols img {
+.footer-container__symbols img {
   margin-right: 30px;
 }
 
-/* MODAL */
+/* ============== MODAL ============== */
 .modalContainer {
   display: none;
   position: fixed;
@@ -274,7 +256,6 @@ nav {
 
 .modalContainer .close {
   color: #aaaaaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
 }
@@ -286,16 +267,31 @@ nav {
   cursor: pointer;
 }
 
-.modal-input {
-  border-radius: 10px;
-  border: 1px solid #eee;
-  outline: none;
+.modal-content__title {
+  text-align: center;
+  color: #ee4c7c;
 }
 
-.modal-input:focus {
-  border: 1px solid #ee4c7c;
+.modal-content__logo {
+  margin: auto;
+  width: 200px;
+  height: 98px;
 }
 
 #btnClose:hover {
   color: #ed2460;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 700px) {
+  nav {
+    height: auto;
+  }
+  .container_logo {
+    display: none;
+  }
+
+  .banner {
+    display: none;
+  }
 }

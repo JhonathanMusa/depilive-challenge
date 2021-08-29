@@ -16,7 +16,7 @@
 
 <body>
   <div>
-    <div class="container_first_text">
+    <div class="container__first-text">
       <p class="first_text">1234590 / +57 348 864 2664</p>
     </div>
     <header class="header">
@@ -32,36 +32,37 @@
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <ul class="navbar-nav ml-auto main-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portal</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
-            </li>
-          </ul>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto main-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nosotros</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
       </nav>
       <div class="banner">
         <img src="./images/banner.png" alt="" />
-        <div class="banner_text">
+        <div class="banner__text">
           <h5>
-            <span class="banner_text-title1">Trabajamos</span> para tu Salud y
-            tu <span class="banner_text-title2">Belleza</span>
+            <span class="banner__text-section1">Trabajamos</span> para tu Salud y
+            tu <span class="banner__text-section2">Belleza</span>
           </h5>
         </div>
-        <div class="banner_text-body">
+        <div class="banner__text-body">
           <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Vestibulum convallis ultric vehicula. Fusce tortor leo, laoreet id
@@ -72,10 +73,8 @@
     </header>
     <section>
       <div class="container-fluid text-center mt-5">
-        <div class="circle">
-        </div>
-        <h3 class="services-title">Nuestros Servicios</h3>
-        <div class="services-info mb-5">
+        <h3 class="services__title">Nuestros Servicios</h3>
+        <div class="services__info mb-5">
           <p>
             Conoce nuestros servicios de depilación láser corporal y facial,
             fotorejuvenecimiento, limpieza facial y masajes corporales.
@@ -86,23 +85,22 @@
 
     <div id="tvesModal" class="modalContainer">
       <div class="modal-content">
-        <h2>Bienvenido</h2>
-        <p>Se ha desplegado el modal y bloqueado el scroll del body!</p>
-        <div class="modal-body">
-          <input type="text" id="name" class="modal-input" autocomplete="off" />
-          <button id="btnClose" class="close">Continue</button>
-        </div>
+        <img class="modal-content__logo" src="./images//logoDepilive.png" alt="" />
+        <h2 class="modal-content__title">Bienvenido</h2>
+        <!--    <input type="text" id="name" class="modal-input" autocomplete="off" /> -->
+        <button id="btnClose" class="close">Continue</button>
+
       </div>
     </div>
 
 
     <section>
-      <div class=" container mb-5">
+      <div class="container mb-5">
         <div class="row">
           <div class="col-sm-4">
             <div class="card text-center" style="width: 18rem">
               <div class="mt-4">
-                <img src="./images/features-2-300x300 1.png" class="service-img" alt="..." />
+                <img src="./images/features-2-300x300 1.png" alt="service1" />
               </div>
               <div class="card-body">
                 <h5 class="card-title">Limpieza Facial</h5>
@@ -110,14 +108,14 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vestibulum convallis ultric vehicula. Fusce tortor leo
                 </p>
-                <button class="service-button">Ver mas</button>
+                <button class="services__button">Ver mas</button>
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card text-center" style="width: 18rem">
               <div class="mt-4">
-                <img src="./images//1092-300x300 1.png" class="service-img" alt="..." />
+                <img src="./images//1092-300x300 1.png" alt="service1" />
               </div>
               <div class="card-body">
                 <h5 class="card-title">Fotorejuvenecimiento Facial</h5>
@@ -125,14 +123,14 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vestibulum convallis ultric vehicula. Fusce tortor leo
                 </p>
-                <button class="service-button">Ver mas</button>
+                <button class="services__button">Ver mas</button>
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card text-center" style="width: 18rem">
               <div class="mt-4">
-                <img src="./images/1240_3-300x300 1.png" class="service-img" alt="..." />
+                <img src="./images/1240_3-300x300 1.png" alt="service1" />
               </div>
               <div class="card-body">
                 <h5 class="card-title">Masajes Corporales</h5>
@@ -140,7 +138,7 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vestibulum convallis ultric vehicula. Fusce tortor leo
                 </p>
-                <button class="service-button">Ver mas</button>
+                <button class="services__button">Ver mas</button>
               </div>
             </div>
           </div>
@@ -152,30 +150,29 @@
       <div class="footer-container">
         <div class="container">
           <div class="row">
-            <div class="col-sm-3 footer-info-1 mt-4">
-              <span class="ft-title">Depilive</span>
-
-              <p class="ft-sub">depilacion y estetica</p>
-              <div class="ft-last-container">
+            <div class="col-sm-3 mt-4">
+              <span class="footer-container__title1">Depilive</span>
+              <p class="footer-container__subtitle">depilacion y estetica</p>
+              <div class="footer-container__last-text">
                 <p>
                   Depilive © 2021 Todos los derechos reservados.
                 </p>
                 </p>
               </div>
             </div>
-            <div class="col-sm-3 footer-info mt-4">
-              <p class="footer-info-title">Nosotros</p>
+            <div class="col-sm-3 footer-container__info mt-4">
+              <p class="footer-container__info-title">Nosotros</p>
               <p>¿Quienes Somos?</p>
               <p>Contactanos</p>
             </div>
-            <div class="col-sm-3 footer-info mt-4">
-              <p class="footer-info-title">Politicas</p>
+            <div class="col-sm-3 footer-container__info mt-4">
+              <p class="footer-container__info-title">Politicas</p>
               <p>Terminos y condiciones</p>
               <p>Politicas de provacidad</p>
             </div>
-            <div class="col-sm-3 footer-info mt-4">
-              <p class="footer-info-title">Siguenos</p>
-              <div class="footer-symbols">
+            <div class="col-sm-3 footer-container__info mt-4">
+              <p class="footer-container__info-title">Siguenos</p>
+              <div class="footer-container__symbols">
                 <img src="./images/symbols/facebook.png" alt="" />
                 <img src="./images/symbols/instagram.png" alt="" />
                 <img src="./images/symbols/twitter.png" alt="" />
